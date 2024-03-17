@@ -47,6 +47,20 @@ kaunjovi@devbook ~ % poetry --version
 Poetry (version 1.8.2)
 ``` 
 
+
+
+# DO NOT go down the poetry path. 
+
+- Simply could not make the 1.7.0 version work. 
+
+```
+kaunjovi@devbook 2024-python-bootstrap % poetry --version 
+Poetry (version 1.7.0)
+```
+
+- It kept complaining about not finding python. 
+
+
 ## Install poetry
 
 - https://python-poetry.org/docs/#installing-with-the-official-installer
@@ -71,3 +85,15 @@ Poetry (version 1.8.2)
 ```
 kaunjovi@devbook 2024-python-bootstrap % poetry init
 ```
+
+## activate poetry shell and run a hello world. 
+
+```
+kaunjovi@devbook 2024-python-bootstrap % poetry shell
+Spawning shell within /Users/kaunjovi/code/2024-python-bootstrap/.venv
+Restored session: Mon Mar 18 01:26:51 IST 2024
+kaunjovi@devbook 2024-python-bootstrap % emulate bash -c '. /Users/kaunjovi/code/2024-python-bootstrap/.venv/bin/activate'
+(2024-python-bootstrap) kaunjovi@devbook 2024-python-bootstrap % python hello-world.py
+Hello world
+```
+
