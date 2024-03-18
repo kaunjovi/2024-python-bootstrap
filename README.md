@@ -97,3 +97,14 @@ kaunjovi@devbook 2024-python-bootstrap % emulate bash -c '. /Users/kaunjovi/code
 Hello world
 ```
 
+
+# How to name python files and folders. 
+
+- [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)
+- Guido’s key insights is that code is read much more often than it is written
+- The naming conventions of Python’s library are a bit of a mess
+- Names that are visible to the user as public parts of the API should follow conventions that reflect usage rather than implementation.
+- Modules should have short, all-lowercase names. 
+- Underscores can be used in the module name if it improves readability. 
+- Python packages should also have short, all-lowercase names, although the use of underscores is discouraged.
+
