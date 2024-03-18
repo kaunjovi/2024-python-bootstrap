@@ -159,6 +159,8 @@ from .context import sample
 
 ## Packages
 
+- https://docs.python-guide.org/writing/structure/#packages
+
 - Any directory with an __init__.py file is considered a Python package.
 - A file modu.py in the directory pack/ is imported with the statement import pack.modu.
 - This statement will look for __init__.py file in pack and execute all of its top-level statements. 
@@ -170,3 +172,10 @@ from .context import sample
 import pack.modu
 import very.deep.module as mod 
 ```
+
+## Testing 
+
+- [Testing Your Code](https://docs.python-guide.org/writing/tests/)
+- [py.test](https://docs.python-guide.org/writing/tests/#py-test)
+- https://stackoverflow.com/questions/16981921/relative-imports-in-python-3
+- https://stackoverflow.com/questions/14132789/relative-imports-for-the-billionth-time
