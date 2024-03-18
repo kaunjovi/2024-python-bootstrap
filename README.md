@@ -108,3 +108,65 @@ Hello world
 - Underscores can be used in the module name if it improves readability. 
 - Python packages should also have short, all-lowercase names, although the use of underscores is discouraged.
 
+- Function names should be lowercase, with words separated by underscores as necessary to improve readability.
+- Variable names follow the same convention as function names.
+
+- Huh. What is this? 
+- Always use self for the first argument to instance methods.
+- Always use cls for the first argument to class methods.
+
+## Project structure for Python 
+
+- [Structuring Your Project](https://docs.python-guide.org/writing/structure/)
+- If your module consists of only a single file, you can place it directly in the root of your repository
+- Your module package is the core focus of the repository. It should not be tucked away 
+
+```
+sample.py
+sample/__init__.py
+sample/core.py
+```
+
+- [MIT license](https://choosealicense.com/licenses/mit/)
+
+```
+./LICENSE
+```
+
+- ./requirements.txt for the dependencies 
+
+- ./test_sample.py or ./tests
+- Use a simple (but explicit) path modification to resolve the package properly.
+- Requiring a developer to run setup.py develop to test an actively changing codebase also requires them to have an isolated environment setup for each instance of the codebase.
+
+- tests/context.py
+
+```
+import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+import sample
+```
+
+- and within each test 
+
+```
+from .context import sample
+```
+
+## Modules
+
+## Packages
+
+- Any directory with an __init__.py file is considered a Python package.
+- A file modu.py in the directory pack/ is imported with the statement import pack.modu.
+- This statement will look for __init__.py file in pack and execute all of its top-level statements. 
+- Then it will look for a file named pack/modu.py and execute all of its top-level statements. 
+- After these operations, any variable, function, or class defined in modu.py is available in the pack.modu namespace.
+- Leaving an __init__.py file empty is considered normal and even good practice, if the package’s modules and sub-packages do not need to share any code.
+
+```
+import pack.modu
+import very.deep.module as mod 
+```
