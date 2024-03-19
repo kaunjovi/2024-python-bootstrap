@@ -187,7 +187,7 @@ import very.deep.module as mod
 
 ## TODO
 
-[] Run all tests on change of any relevant code. 
-[] Provide a report on test coverage. 
-[] Run a specific test. 
-[] Look for any changes in the files, if any change, run all tests. 
+[ ] Run all tests on change of any relevant code. 
+[ ] Provide a report on test coverage. 
+[ ] Run a specific test. 
+[ ] Look for any changes in the files, if any change, run all tests. 
