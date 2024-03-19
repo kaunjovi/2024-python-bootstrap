@@ -113,6 +113,7 @@ Hello world
 - Underscores can be used in the module name if it improves readability. 
 - Python packages should also have short, all-lowercase names, although the use of underscores is discouraged.
 
+- Class names : StackFrontier(): CamelCase. 
 - Function names should be lowercase, with words separated by underscores as necessary to improve readability.
 - Variable names follow the same convention as function names.
 
@@ -187,7 +188,7 @@ import very.deep.module as mod
 
 ## TODO
 
-[ ] Run all tests on change of any relevant code. 
-[ ] Provide a report on test coverage. 
-[ ] Run a specific test. 
-[ ] Look for any changes in the files, if any change, run all tests. 
+- Run all tests on change of any relevant code. 
+- Provide a report on test coverage. 
+- Run a specific test. 
+- Look for any changes in the files, if any change, run all tests. 
