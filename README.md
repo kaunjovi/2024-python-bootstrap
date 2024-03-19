@@ -1,6 +1,11 @@
 # 2024-python-bootstrap
 A opinionated template of a good python project layout and toolset, for 2024
 
+- What should be the top level folder structure. 
+- Where should you keep the source code. 
+- What should you use for dependency management. 
+
+
 ## 2024 Python Boot Project 
 
 - 2024-Python-Boot combined means Bootstrapping a Python Application. 
@@ -179,3 +184,10 @@ import very.deep.module as mod
 - [py.test](https://docs.python-guide.org/writing/tests/#py-test)
 - https://stackoverflow.com/questions/16981921/relative-imports-in-python-3
 - https://stackoverflow.com/questions/14132789/relative-imports-for-the-billionth-time
+
+## TODO
+
+[] Run all tests on change of any relevant code. 
+[] Provide a report on test coverage. 
+[] Run a specific test. 
+[] Look for any changes in the files, if any change, run all tests. 
