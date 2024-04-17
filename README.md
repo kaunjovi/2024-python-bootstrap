@@ -54,14 +54,18 @@ Poetry (version 1.8.2)
 
 
 
-# DO NOT go down the poetry path. 
-
-- Simply could not make the 1.7.0 version work. 
+## Lets try out poetry 
 
 ```
 kaunjovi@devbook 2024-python-bootstrap % poetry --version 
-Poetry (version 1.7.0)
+Poetry (version 1.8.2)
 ```
+
+- This works by telling the system that python is python3.  
+```
+ln -s /opt/homebrew/bin/python3 /opt/homebrew/bin/python
+```
+
 
 - It kept complaining about not finding python. 
 
