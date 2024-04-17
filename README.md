@@ -61,13 +61,13 @@ kaunjovi@devbook 2024-python-bootstrap % poetry --version
 Poetry (version 1.8.2)
 ```
 
+- It kept complaining about not finding python. 
 - This works by telling the system that python is python3.  
 ```
 ln -s /opt/homebrew/bin/python3 /opt/homebrew/bin/python
 ```
 
 
-- It kept complaining about not finding python. 
 
 
 ## Install poetry
