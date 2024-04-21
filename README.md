@@ -196,3 +196,18 @@ import very.deep.module as mod
 - Provide a report on test coverage. 
 - Run a specific test. 
 - Look for any changes in the files, if any change, run all tests. 
+
+## Python / List comprehension 
+
+- https://www.geeksforgeeks.org/python-list-comprehension/
+- Take any list. Create a new list, by running some function, on each member of that list. 
+
+```
+if __name__ == "__main__" : 
+
+    my_list_of_numbers = [1,5,8, 11]
+    my_list_comprehension = [ i*2 for i in my_list_of_numbers]
+    print(f"{my_list_comprehension}")
+```
+
+
