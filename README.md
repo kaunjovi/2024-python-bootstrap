@@ -91,6 +91,15 @@ Python 3.12.6
 Python 3.12.6
 ```
 
+1. Does it run python file? yes. 
+
+```
+(2024-python-bootstrap-py3.12) kaunjovi@devbook 2024-python-bootstrap % python3 src/hello_world.py 
+Hello world, check again
+```
+
+
+
 
 - It kept complaining about not finding python. 
 - This works by telling the system that python is python3.  
