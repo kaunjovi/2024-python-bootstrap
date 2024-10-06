@@ -56,10 +56,41 @@ Poetry (version 1.8.2)
 
 ## Lets try out poetry 
 
+1. Do we have poetry? Yes. Version? 
+
 ```
 kaunjovi@devbook 2024-python-bootstrap % poetry --version 
-Poetry (version 1.8.2)
+Poetry (version 1.8.3)
 ```
+
+1. bring poetry alive. Check out the shell. 
+
+```
+kaunjovi@devbook 2024-python-bootstrap % poetry shell
+Spawning shell within /Users/kaunjovi/code/2024-python-bootstrap/.venv
+kaunjovi@devbook 2024-python-bootstrap % emulate bash -c '. /Users/kaunjovi/code/2024-python-bootstrap/.venv/bin/activate'
+
+(2024-python-bootstrap-py3.12) kaunjovi@devbook 2024-python-bootstrap % 
+```
+
+1. Does it know about Python? Yes. 3.12.6. 
+
+```
+(2024-python-bootstrap-py3.12) kaunjovi@devbook 2024-python-bootstrap % where python 
+/Users/kaunjovi/code/2024-python-bootstrap/.venv/bin/python
+/opt/homebrew/bin/python
+(2024-python-bootstrap-py3.12) kaunjovi@devbook 2024-python-bootstrap % where python3
+/Users/kaunjovi/code/2024-python-bootstrap/.venv/bin/python3
+/Library/Frameworks/Python.framework/Versions/3.11/bin/python3
+/opt/homebrew/bin/python3
+/usr/local/bin/python3
+/usr/bin/python3
+(2024-python-bootstrap-py3.12) kaunjovi@devbook 2024-python-bootstrap % python --version 
+Python 3.12.6
+(2024-python-bootstrap-py3.12) kaunjovi@devbook 2024-python-bootstrap % python3 --version 
+Python 3.12.6
+```
+
 
 - It kept complaining about not finding python. 
 - This works by telling the system that python is python3.  
@@ -197,17 +228,16 @@ import very.deep.module as mod
 - Run a specific test. 
 - Look for any changes in the files, if any change, run all tests. 
 
-## Python / List comprehension 
 
-- https://www.geeksforgeeks.org/python-list-comprehension/
-- Take any list. Create a new list, by running some function, on each member of that list. 
+## https://www.kaggle.com/code/colinmorris/strings-and-dictionaries/tutorial
 
-```
-if __name__ == "__main__" : 
+- What is a string? Either with single quotes, or with double quotes. Both with work. 
+- Sometimes you need that because the string itself might have something with single or double quote. 
 
-    my_list_of_numbers = [1,5,8, 11]
-    my_list_comprehension = [ i*2 for i in my_list_of_numbers]
-    print(f"{my_list_comprehension}")
+```python
+x = 'Pluto is a planet'
+y = "Pluto is a planet"
+x == y
 ```
 
 
